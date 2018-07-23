@@ -1,2 +1,6 @@
-This directory contains a Trac environment.
-Visit http://trac.edgewall.org/ for more information.
+1. mkdir trac && cd trac
+2. git clone https://github.com/sagarpatidar/trac-instance.git
+3. tracd -s -p 8000 --basic-auth="trac,/Users/sagarpatidar/Desktop/work/effy/software/trac/.htpasswd,TestProj" .
+4. Open in chrome: http://0.0.0.0:8000/
+5. Username: admin Password: admin
+6. Open http://0.0.0.0:8000/admin/general/perm and assign admin user permissions: TICKET_ADMIN, TRAC_ADMIN, XML_RPC
